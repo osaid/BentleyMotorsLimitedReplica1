@@ -1,0 +1,430 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/* by using font face we can use fonts outside of the html/css fonnt family aka web safe fonts*/
+@font-face {
+	font-family: GeraldtonMedium;
+	src:url(GeraldtonMedium.otf);
+
+}
+.clr{/*to avoid any messes afer using a float so this is neccesary to clear it up*/ 
+	clear: both;
+}
+/*header*/
+.logo img{
+	width:120px;
+	height: 60px;
+	top: 25px;
+	position: absolute;
+	image-rendering: pixelated;
+}
+.logo img:hover{
+	cursor: pointer;
+}
+.menu ul{
+	display: inline-flex;
+	margin:50px;
+	list-style: none;
+	font-family: GeraldtonMedium;
+
+
+}
+.menu ul li a{
+	text-decoration-line: none;
+	margin: 0 20px;
+	color:#4d4d4d;
+	cursor: pointer;
+
+}
+.models{
+	top:45px;
+	left: 250px;
+	position: absolute;
+	letter-spacing: 0.3em;
+
+}
+
+.worldofbentley{
+	top:45px;
+	left: 380px;
+	position: absolute;
+	letter-spacing: 0.3em;
+}
+.config{
+	top:45px;
+	right:190px;
+	position: absolute;
+	text-decoration: none;
+	font-size: 13px;
+	
+}
+.LD{
+	top:45px;
+	right:30px;
+	position: absolute;
+	text-decoration: none;
+	font-size: 13px;
+	
+}
+
+/*header*/
+
+.banner {
+	width: 100%;
+	height: 600px;
+	margin-top: -15px;
+	border-top:1px solid green;
+	position: relative;
+
+	background-image:url("bentleygt2.jpg");
+	background-size: 100% 600px;
+}
+.banner .apptext{
+	position: relative;
+}
+.banner .apptext h2{
+	margin-top: 200px;
+	left: 40px;
+	position: absolute;
+	color:white;
+	letter-spacing: 0.3em;
+	font-family: GeraldtonMedium;
+}
+
+.banner .apptext p{
+	margin-top: 245px;
+	left: 40px;
+	position: absolute;
+	color:white;
+	display: block;
+	font-family: GeraldtonMedium;
+}
+.banner .bannerbutton1{
+	position: relative;
+}
+.banner .bannerbutton1 a{
+	margin-top: 290px;
+	left: 40px;
+	position: absolute;
+	color:white;
+	padding: 19px 140px;
+	background-color: #345c4c;
+	border:none;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 13px;
+	letter-spacing: 0.1em;
+	font-family: GeraldtonMedium;
+}
+
+.banner .bannerbutton1 a:hover{
+	background-color: #083424;
+}
+
+.banner .bannerbutton2 a{
+	margin-top: 352px;
+	left: 40px;
+	position: absolute;
+	color:white;
+	padding: 15px 66px;;
+	background:none;
+	border:2px white solid;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 13px;
+	letter-spacing: 0.12em;
+	font-family: GeraldtonMedium;
+}
+.banner .bannerbutton2 a:hover{
+	background: rgba(255, 255, 255, 0.3)/* !!BY WRITING THE COLOUR OF THE BACKGROUND AND THE OPACITY YOU CAN CHANGE THE OPACITY OF JUST THE BACKGROUND!!*/
+
+}
+
+.bottomimages li{
+	display: inline-flex;
+	list-style: none;
+	position: relative;
+	letter-spacing: 0.1em;
+	font-size: 17px;
+	font-family: GeraldtonMedium;
+}
+.bottomimages li:first-child{
+	left: 0%;
+	margin: 0;
+	width: 50%;
+	height: 350px;
+	background-image:url("bentleyimageleft.jpg");
+	/*background-size: contain;
+	background-repeat: no-repeat;*/
+	background-size: 100% 340px;	
+
+}
+
+.bottomimages li a{
+	text-decoration: none;
+	color: #4d4d4d;
+}
+
+.bottomimages li:first-child:hover{
+	cursor: pointer;
+}
+
+.bottomimages li:last-child{
+	left: 50%;
+	margin-top: 0;
+	margin-left: 0;
+	position: absolute;
+	width: 680px;
+	height: 340px;
+	background-image:url("bentleyimageright.jpg");
+	background-position: center;
+	background-size: 100% 350px;
+	color: rgba(255,255,255);
+}
+
+
+
+.bottomimages li:nth-child(2):hover{
+	cursor: pointer;
+}
+
+.locatelist{
+	display: flex;
+
+}
+
+.locatelist{
+	border: 1px #ccc solid;
+	position: relative;
+	list-style: none;
+	background: #e3ebeb;
+	height: 140px;
+	text-align: center;
+	margin-top: -10px;
+
+}
+.locatelist li{
+	border:1px #e3ebeb solid;
+
+}
+.locatelist li a{
+	text-decoration: none;
+	color: #e3ebeb;
+	margin: 50px;
+	margin-left: 170px
+	
+
+
+}
+
+.locatelist li:first-child{
+	 background-image:url("newsletterlist.JPG");
+	 background-repeat: no-repeat;
+	 background-position: 40px 0;
+}
+.locatelist li:nth-child(2){
+	 background-image:url("broschure.JPG");
+	 background-repeat: no-repeat;
+	 background-position: 1px 0;
+}
+.locatelist li:nth-child(3){
+	background-image:url("locatedealerlist2.JPG");
+	background-repeat: no-repeat;
+	background-position: -15px 0;
+}
+.locatelist li:last-child{
+	background-image:url("configlist.JPG");
+	background-repeat: no-repeat;
+	background-position: -25px 0;
+}
+
+
+
+
+
+.locatelist li:first-child:hover{
+	 cursor: pointer;
+
+}
+
+.locatelist li:nth-child(2):hover{
+	 cursor: pointer;
+
+}
+
+.locatelist li:nth-child(3):hover{
+	 cursor: pointer;
+	 
+}
+
+
+.locatelist li:last-child:hover{
+	 cursor: pointer;
+
+}
+
+
+.locatelist2{
+	display: flex;
+	color: #727474;
+	margin-top:50px;
+	margin-left: 30px;
+	justify-content: space-between;
+	font-family: GeraldtonMedium;
+	position: relative;
+	margin-right: 50px;
+}
+
+.locatelist2 .list1{
+	list-style: none;
+}
+.locatelist2 .list2{
+	list-style: none;
+}
+.locatelist2 .list3{
+	list-style: none;
+}
+.locatelist2 .list4{
+	list-style: none;
+}
+
+.locatelist2 .list1 a, .list2 a, .list3 a, .list4 a{
+	color: #727474;
+	list-style: none;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+	font-size: 17px;
+
+}
+
+.locatelist2 .list1 a, .list2 a, .list3 a, .list4 a:hover{
+	cursor: pointer;
+}
+.locatelist2 .list1 li:first-child{
+	font-size: 17px;
+	margin-bottom: 16px;
+}
+.locatelist2 .list2 li:first-child{
+	font-size: 17px;
+	margin-bottom: 16px;
+}
+.locatelist2 .list3 li:first-child{
+	font-size: 17px;
+	margin-bottom: 16px;
+}
+.locatelist2 .list4 li:first-child{
+	font-size: 17px;
+	margin-bottom: 16px;
+}
+
+.locatelist2 .list1 li, .list2 li, .list3 li, .list4 li{
+	font-size: 17px;
+	margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+.locatelist2 .list1 a:hover{
+	color: black;
+}
+.locatelist2 .list2 a:hover{
+	color: black;
+}
+.locatelist2 .list3 a:hover{
+	color: black;
+}
+.locatelist2 .list4 a:hover{
+	color: black;
+}
+
+
+/*they put a background colour and then put images on top of it. screen shot the images from the website using snap shot and also snap shot the hover images*/
+
+
+.bentleysocials li{
+	display: inline-flex;
+	margin-left: 20px;
+	margin-top: 48px;
+	margin-bottom: 15px;
+}
+.bentleysocials li img{
+	height: 32px;
+	width: 32px;
+	margin: 8px;
+
+}
+
+.footerline img{
+	left: 35px;
+	position: relative;
+}
+
+.footer li{
+	display: inline-flex;
+	margin-top: 20px;
+	margin-left: 15px;
+	list-style: none;
+	font-family: GeraldtonMedium;
+}
+.footer li a{
+	text-decoration: none;
+	color: #727474;
+	font-size: 18px;
+	margin-left: 20px;
+}
+
+.footer .cr{
+	margin-left: 35px;
+	margin-top: 20px;
+	color: #727474;
+	font-family: GeraldtonMedium;
+	font-size: 13px;
+}
+
+.footer .register{
+	margin-left: 35px;
+	margin-top: 20px;
+	color: #727474;
+	font-family: GeraldtonMedium;
+	font-size: 13px;
+	letter-spacing: 0.01em;
+}
+
+
+
+.footer li a:hover{
+	color: black;
+}
+
+
+.footernav li{
+	display: inline-flex;
+	margin-top: 10px;
+	font-family: GeraldtonMedium;
+}
+
+.footernav li a{
+	color: black;
+	font-size: 13px;
+	text-decoration: underline;
+}
+.footernav li a:hover{
+	text-decoration: none;
+}
+
+
+.footer .fixedfooter{
+	color: white;
+	background-color: #4c4c4c;
+	font-family: GeraldtonMedium;
+	padding:2px 210px;
+	position: fixed;
+	bottom: 0;
+	opacity: 80%;
+
+}
